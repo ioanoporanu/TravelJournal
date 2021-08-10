@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewJourneyActivity"
+    android:background="@drawable/ic_endless_constellation"
+    >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="Add new journey"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_marginTop="200dp"
+        android:id="@+id/enterJourneyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter journey name"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="@color/white"/>
+    <EditText
+        android:id="@+id/enterDestinationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter destination name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/enterJourneyName"/>
+
+    <EditText
+        android:id="@+id/journeyPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter journey price"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/enterDestinationName" />
+    <EditText
+        android:id="@+id/imageId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter image id"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/journeyPrice"
+        />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Save journey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/journeyPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
